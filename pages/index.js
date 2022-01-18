@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Navbar, Hero } from '../components/'
+import { ContainerBlock, Hero } from '../components/'
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+      <ContainerBlock>
+        <Hero />
+      </ContainerBlock>
+      
   )
 }
