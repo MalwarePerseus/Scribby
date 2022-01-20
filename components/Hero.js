@@ -3,16 +3,22 @@ import React from 'react'
 function Hero() {
     return (
         <>
-            <div className="flex flex-row my-0 text-slate-600 ">
+            <div className="flex flex-row my-0 text-slate-600  dark:text-gray-300 pt-5 pb-10">
                 <div className="flex flex-row w-1/2 flex-wrap px-10">
                     <div className="w-52 h-56 border border-black ml-5 m-2"></div>
-                    <div className="w-52 h-52 rounded-full border border-black m-2"></div>
-                    <div className="w-52 h-52 rounded-full border border-black ml-5 m-2"></div>
-                    <div className="w-52 h-56 border border-black m-2"></div>
+                    <div className="w-52 h-52 rounded-full border border-black m-2 overflow-hidden bg-black">
+                        <img src="https://media.wired.com/photos/592682057034dc5f91bebab8/4:3/w_929,h_697,c_limit/NetflixLogo2016.jpg" alt="Netflix Logo" className='pt-7'/>
+                    </div>
+                    <div className="w-52 h-52 rounded-full ml-5 m-2 overflow-hidden">
+                        <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/amazon_video_light_on_dark.png" className='' alt="Amazon Logo" />
+                    </div>
+                    <div className="w-52 h-56 border border-black m-2 overflow-hidden">
+                        {/* <img src="https://cdn.dribbble.com/users/4835348/screenshots/14811742/media/d60bb0b6bb82852b4b3c407c43dc81e9.png?resize=800x800" alt="random" className='h-64' /> */}
+                    </div>
                 </div>
                 <div className='w-1/2 py-10'>
                     <h1 className="font-[Helvetica] font-light text-8xl mr-9 py-0">
-                        One Click Is All It Takes!
+                        One Click Is <br/>All It Takes!
                     </h1>
                     <h2 className="font-light text-4xl mt-2 mb-9 tracking-wide">
                     To endless savings!
