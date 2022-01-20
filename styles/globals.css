@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.doughwidth{
+    width: 30rem;
+}
+.barwidth{
+    width: 60rem;
+    height: 40rem;
+}
