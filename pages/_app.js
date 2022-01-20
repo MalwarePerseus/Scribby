@@ -1,10 +1,21 @@
 import '../styles/globals.css'
 import {ThemeProvider} from 'next-themes'
+import "../src/config/firebase.config";
+import { AuthProvider } from "../src/hook/auth";
+import AuthStateChanged from "../src/layout/AuthStateChanged";
+
+
 function MyApp({ Component, pageProps }) {
   return( 
-    <ThemeProvider defaultTheme='light' attribute='class'>
-       <Component {...pageProps} />
-    </ThemeProvider>
+    <AuthProvider>
+      
+        <AuthStateChanged>
+          <ThemeProvider defaultTheme='light' attribute='class'>
+            <Component {...pageProps} />
+          </ThemeProvider>
+          </AuthStateChanged>
+			
+		</AuthProvider>
   )
 }
 
