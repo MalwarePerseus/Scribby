@@ -5,15 +5,17 @@ function Hero() {
         <>
             <div className="flex flex-row my-0 text-slate-600  dark:text-gray-300 pt-5 pb-10">
                 <div className="flex flex-row w-1/2 flex-wrap px-10">
-                    <div className="w-52 h-56 border border-black ml-5 m-2"></div>
-                    <div className="w-52 h-52 rounded-full border border-black m-2 overflow-hidden bg-black">
+                    <div className="m-2 overflow-hidden">
+                        <img src='./heroImg_2.png' alt='Stats Team' className='w-64 h-52 rounded-3xl'/>
+                    </div>
+                    <div className="w-52 h-52 rounded-full border border-black m-2 overflow-hidden bg-black shadow-lg shadow-red-400">
                         <img src="https://media.wired.com/photos/592682057034dc5f91bebab8/4:3/w_929,h_697,c_limit/NetflixLogo2016.jpg" alt="Netflix Logo" className='pt-7'/>
                     </div>
-                    <div className="w-52 h-52 rounded-full ml-5 m-2 overflow-hidden">
+                    <div className="w-52 h-52 rounded-full ml-5 m-2 overflow-hidden shadow-lg shadow-blue-500">
                         <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/amazon_video_light_on_dark.png" className='' alt="Amazon Logo" />
                     </div>
-                    <div className="w-52 h-56 border border-black m-2 overflow-hidden">
-                        {/* <img src="https://cdn.dribbble.com/users/4835348/screenshots/14811742/media/d60bb0b6bb82852b4b3c407c43dc81e9.png?resize=800x800" alt="random" className='h-64' /> */}
+                    <div className="m-2 overflow-hidden">
+                        <img src="./heroImg_1.png" alt="Family watches Television" className='w-64 h-56' />
                     </div>
                 </div>
                 <div className='w-1/2 py-10'>
