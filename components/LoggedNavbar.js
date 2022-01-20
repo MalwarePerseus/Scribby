@@ -32,13 +32,13 @@ export default function Navbar() {
                 </div>
 
                 <div className="space-x-8 hidden md:block">
-                    <Link href="/dashboard">
+                    <Link href="/main">
                         <a 
-                            className={`text-base  ${router.asPath === "/dashboard"? "text-gray-800 font-bold dark:text-gray-400": "text-gray-600 dark:text-gray-300 font-normal "
+                            className={`text-base  ${router.asPath === "/main"? "text-gray-800 font-bold dark:text-gray-400": "text-gray-600 dark:text-gray-300 font-normal "
                             }`}
                         >   
                             Dashboard{" "}
-                            {router.asPath === "/dashboard" && (
+                            {router.asPath === "/main" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
