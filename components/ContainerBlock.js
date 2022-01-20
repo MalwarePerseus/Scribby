@@ -2,10 +2,13 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Navbar from './Navbar';
+import LoggedNavbar from './LoggedNavbar';
 import Footer from './Footer';
+import useAuth from '../src/hook/auth';
 
 export default function ContainerBlock({ children, ...customMeta}) {
   const router = useRouter();
+  const auth = useAuth();
   const meta = {
       title: 'Scribby | Subscription Manager ',
       description: 'Scribby is a subscription manager which integrates all your subscriptions and lets you keep track of your use cycle to save as much as possible.',
@@ -13,6 +16,13 @@ export default function ContainerBlock({ children, ...customMeta}) {
       type: 'website',
       ...customMeta,
     };
+ let WhichNav;
+ if (!auth.user){
+    WhichNav = <Navbar />
+  } else {
+    WhichNav = <LoggedNavbar/>
+  }
+ 
   return (
       <div>
           <Head>
@@ -43,7 +53,7 @@ export default function ContainerBlock({ children, ...customMeta}) {
           </Head>
 
           <main className='dark:bg-gray-800 w-full'>
-              <Navbar />
+            {WhichNav}
               <div>{children}</div>
               <Footer />
           </main>
