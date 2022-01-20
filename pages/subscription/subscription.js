@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerBlock } from '../components';
+import { ContainerBlock } from '../../components';
 
 const data = {
     title: "Netflix",
