@@ -19,7 +19,7 @@ module.exports = {
             transform: 'rotate(0.5deg)',
           },
           '75%': {
-            transform: 'rotate(-0.5deg)',
+            transform: 'rotate(-2deg)',
           },
         },
       },
