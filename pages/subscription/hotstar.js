@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContainerBlock } from '../../components';
 import {Doughnut, Bar} from 'react-chartjs-2';
+import { withProtected } from "../../src/hook/route";
 
 const data = {
     title: "Hotstar",
@@ -91,4 +92,4 @@ function subscription() {
     );
 }
 
-export default subscription;
+export default withProtected(subscription);

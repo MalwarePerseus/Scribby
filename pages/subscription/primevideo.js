@@ -2,6 +2,8 @@ import React from 'react';
 import { ContainerBlock } from '../../components';
 import {Doughnut, Bar} from 'react-chartjs-2';
 import Link from 'next/link';
+import { withProtected } from "../../src/hook/route";
+
 const data = {
     title: "Amazon Prime",
     data: "You are Not Subscribed to Amazon Prime. Get Subscription for prices as low as $1/month",
@@ -56,4 +58,4 @@ function subscription() {
     );
 }
 
-export default subscription;
+export default withProtected(subscription);

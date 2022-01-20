@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContainerBlock } from '../components'
 import Link from 'next/link'
+import { withProtected } from "../src/hook/route";
 
 function main() {
     return (
@@ -50,4 +51,4 @@ function main() {
     )
 }
 
-export default main
+export default withProtected(main);
