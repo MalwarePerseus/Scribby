@@ -10,8 +10,8 @@ function subscription() {
     
   return (
     <ContainerBlock>
-        <div>
-            <h1>{data.title}</h1>
+        <div className='px-10'>
+            <h1 className='text-2xl'>{data.title}</h1>
             <div className='flex flex-row'>
                 <div className='flex-column'>
                    <div> Hello </div>
